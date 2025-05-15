@@ -1,0 +1,41 @@
+.action-panel {
+    background-color: #f3f2f2;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.action-panel:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.table-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.search-input {
+    max-width: 100%;
+}
+
+/* Style for highlighting selected rows */
+.lead-table .slds-is-selected {
+    --slds-c-table-row-selected-color-background: rgba(21, 137, 238, 0.1);
+}
+
+/* Custom scrollbar for table overflow */
+.table-container {
+    overflow-x: auto;
+    max-height: 400px;
+}
+
+/* Animation for loading spinner */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slds-is-relative {
+    animation: fadeIn 0.3s ease-in;
+}
